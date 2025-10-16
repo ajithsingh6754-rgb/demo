@@ -1,14 +1,13 @@
-import React, { useContext } from 'react';
-import { TodoContext } from './context/Todocontext.jsx';
-
+import React from 'react'
+import { useContext } from 'react';
+import { Todocontext } from './context/Todocontext';
 const Shared2 = () => {
-  const { setArr } = useContext(TodoContext);
-
+    const {setArr}=useContext(Todocontext);
   return (
     <div>
-      <button onClick={() => setArr(["changed", "changed1"])}>Change</button>
+      <button onClick={()=>setArr(["changed","changed1"])}>change</button>
     </div>
-  );
-};
+  )
+}
 
-export default Shared2;
+export default Shared2
